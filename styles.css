@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    width: 100%;
 }
 
 h1 {
@@ -20,11 +21,13 @@ table,
 tr,
 td {
     border: 1px solid black;
-}
+ }
 
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    overflow-x: auto;
+    table-layout: fixed;
 }
 
 tr {

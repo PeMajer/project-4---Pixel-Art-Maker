@@ -7,7 +7,7 @@ function makeGrid() {
 	let canvasWidth = $('#input_width').val();
 	let canvasHeight = $('#input_height').val();
 
-	$('#pixel_canvas').html(' ');  //Delete exist canvas
+	$('#pixel_canvas').html(' ');  //Delete existing canvas
 
 	for (let i = 0; i < canvasHeight ; i++) {
 		$('#pixel_canvas').append('<tr></tr>');
@@ -16,8 +16,6 @@ function makeGrid() {
 		}
 	}
 }
-
-
 
 $('input').click(function(evt){
 	evt.preventDefault();
