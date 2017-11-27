@@ -17,7 +17,7 @@ function makeGrid() {
 	}
 }
 
-$('input').click(function(evt){
+$(':submit').click(function(evt){
 	evt.preventDefault();
 	makeGrid();
 });
