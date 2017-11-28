@@ -17,11 +17,11 @@ function makeGrid() {
 	}
 }
 
-$(':submit').click(function(evt){
+makeGrid();
+
+$('#sizePicker input').click(function(evt){
 	evt.preventDefault();
 	makeGrid();
 });
-
-
 
 
