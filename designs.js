@@ -2,12 +2,11 @@
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
-
 function makeGrid() {
-	let canvasWidth = $('#input_width').val();
-	let canvasHeight = $('#input_height').val();
+	const canvasWidth = $('#input_width').val();
+	const canvasHeight = $('#input_height').val();
 
-	$('#pixel_canvas').html(' ');  //Delete existing canvas
+	$('#pixel_canvas').html('');  //Delete existing canvas
 
 	for (let i = 0; i < canvasHeight ; i++) {
 		$('#pixel_canvas').append('<tr></tr>');
@@ -25,3 +24,15 @@ $('#sizePicker input').click(function(evt){
 });
 
 
+$('#pixel_canvas').on('click','td', function(evt){
+	const color = $('#colorPicker').val();
+	$(evt.target).css('background-color', color);
+});
+
+//This solution works bad. Fast clicking -> coloring whole line, more cells, etc.
+/*$('#pixel_canvas').click('td', function(evt){
+	let color = $('#colorPicker').val();
+	//$('body').css('background-color', color);
+	$(evt.target).css('background-color', color);
+	console.log(color);
+}); */
