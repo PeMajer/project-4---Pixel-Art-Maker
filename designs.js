@@ -18,13 +18,13 @@ function makeGrid() {
 
 makeGrid();
 
-$('#sizePicker input').click(function(evt){
+$(':submit').click(function(evt){  
 	evt.preventDefault();
 	makeGrid();
 });
 
 
-$('#pixel_canvas').on('click','td', function(evt){
+$('table').on('click','td', function(evt){
 	const color = $('#colorPicker').val();
 	$(evt.target).css('background-color', color);
 });
