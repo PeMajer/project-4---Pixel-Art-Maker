@@ -28,11 +28,3 @@ $('table').on('click','td', function(evt){
 	const color = $('#colorPicker').val();
 	$(evt.target).css('background-color', color);
 });
-
-//This solution works bad. Fast clicking -> coloring whole line, more cells, etc.
-/*$('#pixel_canvas').click('td', function(evt){
-	let color = $('#colorPicker').val();
-	//$('body').css('background-color', color);
-	$(evt.target).css('background-color', color);
-	console.log(color);
-}); */
