@@ -1,7 +1,6 @@
-// Select color input
-// Select size input
-// When size is submitted by the user, call makeGrid()
-
+/**
+* @description Create pixel canvas (grid) 
+*/
 function makeGrid() {
 	const canvasWidth = $('#input_width').val();
 	const canvasHeight = $('#input_height').val();
@@ -16,7 +15,7 @@ function makeGrid() {
 	}
 }
 
-makeGrid();
+makeGrid();		//Call makeGrid() here to create a grid of default size when the page first loads.
 
 $(':submit').click(function(evt){	//listen for (click) event on submition button 
 	evt.preventDefault();          	//cancel default action  
